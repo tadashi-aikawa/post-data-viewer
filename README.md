@@ -15,16 +15,20 @@ Linuxの場合
 
 ### 初回準備
 
+```
 $ git clone https://github.com/tadashi-aikawa/post-data-viewer.git
 $ cd post-data-viewer
 $ pyvenv venv (or virtualenv venv)
 $ source venv/bin/activate
 $ pip install -r requirements.txt
+```
 
 ### 実行
 
+```
 $ source venv/bin/activate
 $ python src/main.py
+```
 
 ## 動作確認
 
