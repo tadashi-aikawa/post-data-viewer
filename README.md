@@ -5,27 +5,32 @@ webフックの動作確認などに使用して下さい。
 
 ## 環境
 
-* Python2.7以上
-* Python3.3以上
-* 仮想環境が作成できること
+以下のいずれか
 
-## 動作の準備
+* Dockerが使えること
+* Python2.7以上 かつ 仮想環境が作成できること
+* Python3.3以上 かつ 仮想環境が作成できること 
 
-Linuxの場合
-
-### 初回準備
+## リポジトリ取得
 
 ```
 $ git clone https://github.com/tadashi-aikawa/post-data-viewer.git
 $ cd post-data-viewer
+```
+
+## ビルド+実行 (Dockerを使う場合)
+
+```
+$ sudo docker build -t post-data-viewer .
+$ sudo docker run -it --rm -p 8088:8088 post-data-viewer
+```
+
+## ビルド+実行 (Dockerを使わない場合)
+
+```
 $ pyvenv venv (or virtualenv venv)
 $ source venv/bin/activate
 $ pip install -r requirements.txt
-```
-
-### 実行
-
-```
 $ source venv/bin/activate
 $ python src/main.py
 ```
