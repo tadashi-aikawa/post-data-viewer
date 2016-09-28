@@ -1,14 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys
-import io
 import json
 
 import bottle
 from bottle import run, get, request, response, error 
 
 app = bottle.Bottle()
+
 
 @app.get('/ping')
 def ping():
