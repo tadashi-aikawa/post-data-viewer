@@ -9,7 +9,7 @@ from bottle import run, get, request, response, error
 app = bottle.Bottle()
 
 
-@app.get('/ping')
+@app.get('/')
 def ping():
     # if need
     # response.set_header('Access-Control-Allow-Origin', '*')

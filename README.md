@@ -37,7 +37,7 @@ $ python src/main.py
 
 ## 動作確認
 
-`http://${your ip address}:8088/ping` にアクセス。  
+`http://${your ip address}:8088` にアクセス。  
 エラーにならなければOK。
 
 ## 実際の使い方
